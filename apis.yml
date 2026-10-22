@@ -1,23 +1,87 @@
 aid: sghl
-name: SGH
-description: 'SGH is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+name: SGH Ltd
+
+description: 'SGH Ltd (ASX:SGH) is an Australian diversified operating
+  company with market-leading businesses across industrial services, energy and media. In industrial
+  services it owns WesTrac (the sole authorised Caterpillar dealer in WA and NSW/ACT), Boral (construction
+  materials), Coates (equipment hire) and Allight (mobile lighting and power); in energy it wholly owns
+  SGH Energy and holds 30.0% of Beach Energy; in media it holds 20.1% of Southern Cross Media. Its corporate
+  site sghl.com.au publishes no developer portal, API documentation or public API. Surfaced via the API
+  Evangelist harvest backlog (source: australia-apidays-2026).'
+
+image: https://sghl.com.au/apple-touch-icon.png
+
 url: https://raw.githubusercontent.com/api-evangelist/sghl/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-22 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-22'
+
 modified: '2026-10-22'
+
 tags:
 - Company
-apis: []
+- Australia
+- Industrial Services
+- Energy
+- Construction Materials
+- Equipment Hire
+- Media
+- ASX Listed
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/sghl-hosts.yml
+- type: DomainSecurity
+  url: security/sghl-domain-security.yml
 - type: Website
   url: https://sghl.com.au/
+- type: Contact
+  url: https://sghl.com.au/contact
+- type: InvestorRelations
+  url: https://sghl.com.au/investor-centre/introduction
+- type: PrivacyPolicy
+  url: https://sghl.com.au/privacy
+- type: TermsOfService
+  url: https://sghl.com.au/terms
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Corporate site sghl.com.au identifies itself as SGH Ltd (ASX:SGH); no developer portal, API docs,
+    blog, GitHub, pricing or signup is linked from the site or its navigation.
+  evidence:
+  - url: https://sghl.com.au/
+    status: 200
+  - url: https://sghl.com.au/contact
+    status: 200
+  - url: https://sghl.com.au/privacy
+    status: 200
+  - url: https://sghl.com.au/terms
+    status: 200
+  - url: https://sghl.com.au/investor-centre/introduction
+    status: 200
+  - url: https://sghl.com.au/apple-touch-icon.png
+    status: 200
+x-enrichment:
+  date: '2026-10-22'
+  status: enriched
+  artifacts_added: 10
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

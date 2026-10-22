@@ -1,0 +1,77 @@
+generated: '2026-10-22'
+method: searched
+probe: true
+source: https://sghl.com.au/privacy
+note: >-
+  SGH Ltd (ASX-listed Australian diversified group) publishes a Privacy Policy dated "Released 12 March 2014"
+  under the Australian Privacy Principles, plus Terms of Use. These are corporate-website legal pages; SGH
+  publishes no API, so none of these signals concern a developer platform. The pages say nothing about AI,
+  incident/breach notification to customers, Global Privacy Control, exit assistance, accessibility, SBOM or
+  transparency reports, so those signals are not recorded.
+signals:
+  data_subject_request:
+    url: https://sghl.com.au/privacy
+    section: '6. Access To Personal Information'
+    channel: sgh_privacy_officer@sghl.com.au (in writing, to the Privacy Officer)
+    stated_sla: 'acknowledged within 14 days; access usually within 14 days, or 30 days if more complicated'
+    rights_named: [access, correction, complaint]
+    escalation: Office of the Australian Information Commissioner (OAIC)
+    evidence:
+    - source: https://sghl.com.au/privacy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: 'All requests for access to your personal information must be made in writing and addressed to the Privacy Officer.'
+    - source: https://sghl.com.au/privacy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: 'SGH will acknowledge your request within 14 days, and access will usually be granted within 14 days, or if it is more complicated, 30 days. SGH will inform you if this timeframe is not achievable.'
+    - source: https://sghl.com.au/privacy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: 'A fee may apply to such access in the event that a request for access is onerous or time consuming.'
+    - source: https://sghl.com.au/privacy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: 'If you believe SGH has not adequately dealt with your complaint, you may complain to the Privacy Commissioner whose contact details are as follows:'
+    note: >-
+      A written access-and-correction procedure with stated timeframes, a possible fee for onerous requests,
+      listed grounds for refusal (with written reasons), and escalation to the OAIC. Deletion and portability
+      are not named.
+  data_residency:
+    url: https://sghl.com.au/privacy
+    section: '2. Use & Disclosure of Personal Information'
+    regions: [Australia (default), UK, US (possible transfers)]
+    evidence:
+    - source: https://sghl.com.au/privacy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        Generally, SGH will retain your personal information within Australia and not use or disclose it
+        overseas. However, on some occasions the information may need to be transferred to overseas countries
+        including but not limited to the UK and the US in order to perform one of SGH's functions or activities.
+    note: >-
+      Australia is the stated default location; cross-border transfers (named UK and US, "not limited to")
+      happen with consent or reasonable endeavours that the recipient protects the data. This is a general
+      statement, not a customer-selectable residency option.
+  subprocessors:
+    url: https://sghl.com.au/privacy
+    section: '2. Use & Disclosure of Personal Information'
+    published_list: false
+    evidence:
+    - source: https://sghl.com.au/privacy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: >-
+        Like most business organisations, SGH performs some of its functions under licence and also contracts
+        out some functions and relies on third party suppliers to conduct specialised activities such as website
+        management, share registry services, mailout services, call centre services, data analysis and
+        processing services, insurance broking, vehicle and petrol supply, supply of equipment, engineering
+        services, security services, financial services, credit reporting services and travel and hospitality
+        services.
+    - source: https://sghl.com.au/privacy
+      http_status: 200
+      fetched: '2026-10-22'
+      quote: 'SGH will require all such suppliers to provide privacy undertakings and enter confidentiality agreements.'
+    note: >-
+      Third-party suppliers are disclosed by CATEGORY only; no named subprocessor list is published. Suppliers
+      are bound by privacy undertakings and confidentiality agreements.

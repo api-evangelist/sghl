@@ -1,0 +1,23 @@
+name: SGH Ltd MCP server
+type: MCPServer
+generated: '2026-10-22'
+method: none
+status: none
+source:
+- https://sghl.com.au/
+description: >-
+  No official hosted or local MCP server for SGH Ltd was found. The pre-flight probes of
+  sghl.com.au (2026-10-22) found no MCP endpoint, agent card or contract, and a web search
+  for an SGH / sghl.com.au MCP server returned only unrelated projects. No OpenAPI contract
+  exists in this repo, so no candidate tool list could be derived either.
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched
+tools: []
+evidence:
+- url: https://sghl.com.au/
+  status: 200
+  note: Corporate site with no developer portal, API docs or MCP references (pre-flight front_door open).
+- url: https://sghl.com.au/llms.txt
+  status: 404

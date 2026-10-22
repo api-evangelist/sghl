@@ -1,0 +1,7 @@
+name: SGH rate limits
+generated: '2026-10-22'
+method: none
+source: https://sghl.com.au/
+limit_count: 0
+limits: []
+note: No public API or API documentation is published by SGH Ltd, so no rate limits are documented. Corporate site sghl.com.au checked (HTTP 200); preflight contract discovery found no OpenAPI, AsyncAPI, GraphQL or MCP surface.

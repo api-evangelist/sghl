@@ -1,0 +1,21 @@
+generated: '2026-10-22'
+method: none
+source:
+- https://zapier.com/apps/sghl/integrations
+- https://zapier.com/apps/sgh-ltd/integrations
+- https://n8n.io/integrations/sghl/
+- https://composio.dev/toolkits/sghl
+- https://monid.ai/tools/sghl
+checked:
+- https://sghl.com.au/
+- https://zapier.com/apps/sgh/integrations
+- https://n8n.io/integrations/sgh/
+- https://composio.dev/toolkits/sghl
+- https://monid.ai/tools/sghl
+- https://n8n.io/integrations/sghl/
+- https://zapier.com/apps/sgh-ltd/integrations
+- https://zapier.com/apps/sghl/integrations
+summary: SGH Ltd publishes no API, integrations page or marketplace listing; no integration edges found.
+marketplace_apps: []
+edges: []
+templates: []
